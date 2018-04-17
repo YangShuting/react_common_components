@@ -1,0 +1,14 @@
+
+清除计时组件：
+要点：
+1. 挂载组件的时候，使用 componentWillMount 和 componentWillMount 都可以, 官方的版本是使用 componentDidMount，两个的区别是：
+ 1.1 ComponentWillMount 是在组件渲染之前做的操作，可以获取数据等，componentDidMount 是DOM元素渲染之后。如果接口的数据是需要DOM元素配合的话，则应该使用ComponentDidMount
+2. 需要卸载组件，卸载组件的时候，使用 componentWillUnmount
+
+
+登录的时候的验证码的倒计时
+
+
+自然计时组件：/src/components/Time.js
+
+外部传入的开始和结束的 props 的计时组件 /src/components/Time1.js
