@@ -36,9 +36,11 @@ class App extends Component {
           时间组件：
           <Time />
           <Time1 date={new Date().toLocaleTimeString()} onStart= {this.state.onStart} />
-          <Button onClick={() => this.setState({onStart: !this.state.onStart})}>{this.state.onStart && <span>停止</span> || !this.state.onStart && <span>开始</span>}</Button>
+          <Button onClick={() => this.setState({onStart: !this.state.onStart})}>{(this.state.onStart && <span>停止</span> )|| (!this.state.onStart && <span>开始</span>)}</Button>
           <CountDownTimer duration='10' onStart={this.state.onStart} done={value => this.done(value)} />
           <div>计时器的状态：{this.state.done ? <span>停止了</span> : <span>还在继续</span>}</div>
+
+          <p>树形组件</p>
       </div>
     );
   }

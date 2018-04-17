@@ -44,7 +44,7 @@ class CountDownTimer extends Component{
 
         this.circleTimer = setInterval(() => {
             this.setState({i})
-            if(parseInt(time) === parseInt(i)){
+            if(parseInt(time, 10) === parseInt(i, 10)){
                 clearInterval(this.circleTimer)
                 return
             }
@@ -59,7 +59,7 @@ class CountDownTimer extends Component{
     }
 
     render(){
-        let {i, duration} = this.state
+        let {duration} = this.state
         return (
             <div>倒计时：{duration}
                 <div className="item html">

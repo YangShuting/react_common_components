@@ -1,0 +1,24 @@
+树形组件：
+传入数据的格式：
+[
+    {
+        name: 'treeNode1',
+        children: [
+            {
+                name: ''
+            }
+        ]
+    },
+    {
+        name: 'treeNode2',
+        children: [
+           {
+               name: ''
+           },
+           {
+                name: ''
+           }
+        ]
+    }
+]
+
