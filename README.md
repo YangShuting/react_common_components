@@ -10,4 +10,5 @@
 
 ### 2. TreeView Component
 #### 2.1 import Tree from
-#### 2.2 <Tree  data={treeData} /> // treeData: [{ name: 'node1', collapsed: true, children: [{ name: 'node1-1', collapsed: true }] }]
+#### 2.2
+    <Tree  data={treeData} /> // treeData: [{ name: 'node1', collapsed: true, children: [{ name: 'node1-1', collapsed: true }] }]
