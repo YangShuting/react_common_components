@@ -8,7 +8,7 @@ import './App.css';
 import Time from './components/Time'
 import Time1 from './components/Time1'
 import CountDownTimer from './components/CountDownTimer'
-
+import Tree from './components/Tree'
 
 class App extends Component {
     constructor(){
@@ -23,6 +23,11 @@ class App extends Component {
     }
 
   render() {
+        let treeData = [
+            {name: 'node1', collapsed: true},
+            {name: 'node2', collapsed: true, children: [{name: 'node2-1', collapsed: true}, {name: 'node2-2', collapsed: true}, {name: 'node2-3', collapsed: true, children: [{name: 'node3-1', collapsed: true, children: [{name: 'node4-1', collapsed: true}]}]}]}
+        ]
+
     return (
       <div className="App">
         <header className="App-header">
@@ -39,8 +44,10 @@ class App extends Component {
           <Button onClick={() => this.setState({onStart: !this.state.onStart})}>{(this.state.onStart && <span>停止</span> )|| (!this.state.onStart && <span>开始</span>)}</Button>
           <CountDownTimer duration='10' onStart={this.state.onStart} done={value => this.done(value)} />
           <div>计时器的状态：{this.state.done ? <span>停止了</span> : <span>还在继续</span>}</div>
-
-          <p>树形组件</p>
+            <div className="treeView">
+                <p>树形组件</p>
+                <Tree data={treeData} />
+            </div>
       </div>
     );
   }

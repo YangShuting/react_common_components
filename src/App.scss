@@ -1,5 +1,11 @@
 .App {
   text-align: center;
+
+  .treeView{
+    width: 600px;
+    float: left;
+    border: 1px solid #eee
+  }
 }
 
 .App-logo {
@@ -26,3 +32,4 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+

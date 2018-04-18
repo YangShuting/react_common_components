@@ -5,7 +5,8 @@
         name: 'treeNode1',
         children: [
             {
-                name: ''
+                name: '',
+                collapsed: true
             }
         ]
     },
@@ -13,10 +14,12 @@
         name: 'treeNode2',
         children: [
            {
-               name: ''
+               name: '',
+               collapsed: true
            },
            {
-                name: ''
+                name: '',
+                collapsed: true
            }
         ]
     }

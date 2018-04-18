@@ -22,3 +22,6 @@ yarn-error.log*
 
 #ignore all css files in src
 src/**/*.css
+
+#ignore the .idea files
+.idea/*.xml
