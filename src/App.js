@@ -9,6 +9,7 @@ import Time from './components/Time'
 import Time1 from './components/Time1'
 import CountDownTimer from './components/CountDownTimer'
 import Tree from './components/Tree'
+import Progress from './components/Progress'
 
 class App extends Component {
     constructor(){
@@ -47,6 +48,9 @@ class App extends Component {
             <div className="treeView">
                 <p>树形组件</p>
                 <Tree data={treeData} />
+            </div>
+            <div className="progress">
+                <Progress width="400px" animate="true" unFinishedStatus="active" total="10" currentValue="50" />
             </div>
       </div>
     );
