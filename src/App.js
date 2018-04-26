@@ -10,6 +10,7 @@ import Time1 from './components/Time1'
 import CountDownTimer from './components/CountDownTimer'
 import Tree from './components/Tree'
 import Progress from './components/Progress'
+import ProgressV2  from './components/ProgressV2'
 
 class App extends Component {
     constructor(){
@@ -49,9 +50,12 @@ class App extends Component {
                 <p>树形组件</p>
                 <Tree data={treeData} />
             </div>
-            <div className="progress">
+            <div className="progressWrapper">
                 <Progress width="400px" animate="true" unFinishedStatus="active" total="10" currentValue="50" />
             </div>
+          <div className="progressWrapper">
+              <ProgressV2 color="aqua" currentValue="progress2" height="20px" data={[{label: '进度3', value: "progress1"},{label: '进度2', value: 'progress2'},{label: '进度3', value: 'progress3'}, {label: '进度4', value: 'progress4'}]} width="600" />
+          </div>
       </div>
     );
   }

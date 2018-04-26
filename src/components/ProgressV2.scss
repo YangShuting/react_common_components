@@ -1,0 +1,27 @@
+.bar_wrapper{
+  .bar_text{
+    position: relative;
+    height: 20px;
+  }
+  .progressV2{
+    height: 20px;
+    background-color: #f5f5f5;
+    border-radius: 30px;
+    .inner_bar{
+      height: 100%;
+      background-color: aqua;
+      border: none;
+      border-radius: 30px;
+      position: relative;
+      .circle{
+        position:absolute;
+        right:0;
+        margin-top: -6px;
+        background: #0086ff;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+      }
+    }
+  }
+}

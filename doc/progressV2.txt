@@ -1,0 +1,12 @@
+进度条：文字型
+data = [
+{label: '进度1', value: 'progress1'},
+{label: '进度2', value: 'progress2'},
+{label: '进度3', value: 'progress3'},
+]
+
+currentValue: 'progress2'
+
+
+bar width ==>  width / data.length * index_of_array
+progress text position ==> absolute left %
