@@ -53,8 +53,8 @@ class App extends Component {
             <div className="progressWrapper">
                 <Progress width="400px" animate="true" unFinishedStatus="active" total="10" currentValue="50" />
             </div>
-          <div className="progressWrapper">
-              <ProgressV2 color="aqua" currentValue="progress2" height="20px" data={[{label: '进度3', value: "progress1"},{label: '进度2', value: 'progress2'},{label: '进度3', value: 'progress3'}, {label: '进度4', value: 'progress4'}]} width="600" />
+          <div style={{width: '100%', float: 'left'}}>
+              <ProgressV2 color="#0f83e6" currentValue="progress2" height="10px" data={[{label: '报名预约', value: "progress1"},{label: '设备测试', value: 'progress2'},{label: '试听课', value: 'progress3'}, {label: '报价单', value: 'progress4'}]} width="1000" />
           </div>
       </div>
     );

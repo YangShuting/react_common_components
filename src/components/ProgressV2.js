@@ -8,7 +8,7 @@ class ProgressV2 extends Component{
            color, currentValue, height, data, width
         } = this.props
         let currrentWidth = ( data.findIndex(item => item.value === currentValue) + 1 ) / data.length * width
-        let text = data.map( (item, index) => <span key={item.value} style={{position: 'absolute', left: `${((index+1)/data.length * 100 - 10)}%`}}>{item.label}</span> )
+        let text = data.map( (item, index) => <span key={item.value} style={{position: 'absolute', left: `${((index+1)/data.length * 100 - 5)}%`}}>{item.label}</span> )
         const style = {
             backgroundColor: color,
             width: `${currrentWidth}px`,
@@ -16,13 +16,13 @@ class ProgressV2 extends Component{
         }
       return(
           <div className="bar_wrapper" style={{width: `${width}px`}}>
-              <div className="bar_text">
-                  {text}
-              </div>
               <div className="progressV2" style={{width: `${width}px`}}>
                   <div className="inner_bar" style={style}>
                       <span className="circle"></span>
                   </div>
+              </div>
+              <div className="bar_text">
+                  {text}
               </div>
           </div>
 
